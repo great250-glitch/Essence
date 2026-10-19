@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Wishlist — ÉSSÉNCE</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="logo" href="index.html">ÉSSÉNCE</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a><a href="shop.html">Shop</a
+          ><a href="collections.html">Collections</a
+          ><a href="about.html">About</a><a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-tools">
+          <a class="nav-icon" href="shop.html">⌕</a
+          ><a class="nav-icon" href="wishlist.html"
+            >♡<sup class="count" data-wish-count>0</sup></a
+          ><a class="nav-icon" href="cart.html"
+            >♧<sup class="count" data-cart-count>0</sup></a
+          ><button class="menu-toggle">☰</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="page-head">
+        <p class="eyebrow">Saved pieces</p>
+        <h1>Your wishlist</h1>
+        <p>Keep the pieces that caught your eye close.</p>
+      </section>
+      <section class="section container">
+        <div id="wishlist-grid" class="product-grid"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container copyright">© 2026 ÉSSÉNCE. All rights reserved.</div>
+    </footer>
+    <div class="toast"></div>
+    <script src="product.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
