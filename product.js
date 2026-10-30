@@ -1,16 +1,16 @@
 const products = [
   {
     id: 1,
-    name: "Suit",
-    category: "Dresses",
+    name: "Considered Suit",
+    category: "Suits",
     price: 89500,
     image:
-      "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRDaBNM6pu8FMSzu4dCN759abJBYTjCSskX5-VEJCZzvLvG99TvzbbunXYMXsrNGrRbfDky4CzfuR5c717gil7gTExbPVUO5rldFaVuCJZknJrnYGvF5vWe_awCxNCtdTYF3IcEODEj&usqp=CAc",
+      "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?auto=format&fit=crop&w=900&q=85",
     description:
-      "A softly draped midi dress designed for effortless evenings and refined everyday dressing.",
+      "A refined two-piece suit with clean lines and thoughtful tailoring for a confident presence.",
     sizes: ["XS", "S", "M", "L", "XL"],
-    material: "Silk-blend satin",
-    fit: "Relaxed through the body",
+    material: "Premium suiting wool",
+    fit: "Tailored",
     care: "Dry clean recommended",
     shipping: "Ships within 2–4 business days",
   },
@@ -31,13 +31,13 @@ const products = [
   },
   {
     id: 3,
-    name: "Top",
+    name: "Modern Polo",
     category: "Tops",
     price: 54000,
     image:
-      "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT4ZY_tobEkUVp1etNHuISFcyAfrnzknHOhjXEE5ipluYa_zGiNvGBtZ1llwlymHp6sNGF5mKp7SH531fHlgy8Ecp8CUCqCiSw-K_lkazvoEm5kqC3NZjY-17rRl4uRNDiSXEIL3cw&usqp=CAc",
+      "https://images.unsplash.com/photo-1627225924765-552d49cf47ad?auto=format&fit=crop&w=900&q=85",
     description:
-      "A clean sculpted top with an elegant neckline and versatile proportions.",
+      "A timeless polo essential, finished with an easy fit and quiet polish.",
     sizes: ["XS", "S", "M", "L", "XL"],
     material: "Structured cotton",
     fit: "True to size",
@@ -204,6 +204,21 @@ const products = [
     material: "Vegan leather",
     fit: "Adjustable",
     care: "Wipe clean",
+    shipping: "Ships within 2–4 business days",
+  },
+  {
+    id: 15,
+    name: "ÉSSÉNCE Tailored Jacket",
+    category: "Jackets",
+    price: 92000,
+    image:
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=85",
+    description:
+      "An effortless final layer that brings considered structure to every look.",
+    sizes: ["XS", "S", "M", "L", "XL"],
+    material: "Cotton blend",
+    fit: "Relaxed tailoring",
+    care: "Dry clean recommended",
     shipping: "Ships within 2–4 business days",
   },
 ];

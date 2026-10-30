@@ -61,6 +61,12 @@ function setupShop() {
   let search = document.querySelector("#search"),
     sort = document.querySelector("#sort"),
     active = "All";
+  const requestedCategory = new URLSearchParams(location.search).get("category");
+  if ([...document.querySelectorAll("[data-category]")].some(
+    (button) => button.dataset.category === requestedCategory,
+  )) {
+    active = requestedCategory;
+  }
   const run = () => {
     let q = (search?.value || "").toLowerCase();
     let list = products.filter(
@@ -87,6 +93,11 @@ function setupShop() {
         run();
       }),
   );
+  document
+    .querySelectorAll("[data-category]")
+    .forEach((button) =>
+      button.classList.toggle("active", button.dataset.category === active),
+    );
   search?.addEventListener("input", run);
   sort?.addEventListener("change", run);
   run();
@@ -186,6 +197,13 @@ function setupForms() {
 function setupNav() {
   let b = document.querySelector(".menu-toggle"),
     n = document.querySelector(".nav-links");
+  const currentPage = location.pathname.split("/").pop() || "index.html";
+  n?.querySelectorAll('a[href]').forEach((link) => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+      link.setAttribute("aria-current", "page");
+    }
+  });
   b?.addEventListener("click", () => {
     n.classList.toggle("open");
     b.classList.toggle("open");
